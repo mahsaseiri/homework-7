@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+
+<body>
+    <div class="text">
+        <div>1-name : a-zA-Z</div>
+        <br>
+        <div>2-lastname: a-zA-Z</div>
+        <br>
+        <div>3-city : everything </div>
+        <br>
+        <div>4-email :[a-z]+[a-zA-Z0-9._-]*@(gmail|yahoo|outlook|hotmail).com$</div>
+        <br>
+        <div>5-username : a-zA-Z0-9</div>
+        <br>
+        <div>6-password : everything</div>
+        <br>
+        <div>7-security code: case sensitivity</div>
+        <br>
+        <div>if you entered an invalid value , clear then enter new value</div>
+    </div>
+    <div class="form_box" id="form_box">
+        <h3 class="header">Register new account</h3>
+        <input type="text" placeholder="First name" class="myinput first_name" onkeyup="fname()">
+        <input type="text" placeholder="Last name" class="myinput last_name" onkeyup="lname()">
+        <div id="output1"></div>
+        <div id="output2"></div>
+        <input type="text" placeholder="City" class="myinput city">
+        <div id="output3">optional</div>
+        <input type="text" placeholder="Email address" class="myinput email_address" id="email" onchange="validation_email()">
+        <div id="output4"></div>
+        <input type="text" placeholder="User name" class="myinput user_name" onkeyup="uname()">
+        <div id="output5"></div>
+        <input type="password" placeholder="Password" class="myinput password" onchange="pas()">
+        <div id="output6"></div>
+        <input type="password" placeholder="password confirmation" class="myinput password" onchange="conf_pas()">
+        <div id="output7"></div>
+        <input type="text" class="myinput security">
+        <div id="output8"></div>
+        <button class="btn" onclick="send_info()"><span class="sign_up">Sign up</span></button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+body {
+    background-color: cadetblue;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: rgba(65, 105, 225, 0.356);
+    --form-shadow: 0 0 10px rgba(128, 128, 128, 0.637);
+}
+
+.text {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.form_box {
+    width: 400px;
+    height: 620px;
+    background-color: white;
+    box-shadow: var(--form-shadow);
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.successfull {
+    line-height: 620px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(65, 105, 225, 0.815);
+    text-align: center;
+}
+
+.header {
+    background: linear-gradient(to right, rgba(65, 105, 225, 0.815), var(--body-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 2px solid rgba(65, 105, 225, 0.815);
+}
+
+.myinput {
+    border: 2px solid var(--body-color);
+    font-size: 17px;
+    text-indent: 5px;
+}
+
+.first_name,
+.last_name {
+    display: inline-block;
+    width: 174px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.last_name {
+    margin-left: 4px;
+}
+
+.city,
+.email_address,
+.user_name,
+.password {
+    width: 356px;
+    height: 40px;
+}
+
+.security {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 40px;
+}
+
+.btn {
+    width: 250px;
+    height: 45px;
+    display: inline-block;
+    background-color: rgba(65, 105, 225, 0.788);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(65, 105, 225, 0.877);
+}
+
+.sign_up {
+    color: white;
+}
+
+#output3,
+#output4,
+#output5,
+#output6,
+#output7 {
+    width: 356px;
+    height: 30px;
+    color: rgba(65, 105, 225, 0.815);
+}
+
+#output1,
+#output2 {
+    float: left;
+    width: 174px;
+    height: 30px;
+    color: rgba(65, 105, 225, 0.699);
+    font-size: 14px;
+}
+
+#output2 {
+    margin-left: 8px;
+}
+
+#output3 {
+    opacity: 0;
+}
+
+#output8 {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 40px;
+    padding-left: 5px;
+    color: gray;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.city:focus~#output3 {
+    opacity: 1;
+}
