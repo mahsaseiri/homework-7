@@ -65,8 +65,8 @@ function lname() {
 
 function validation_email() {
     var email_output = document.getElementById("output4");
-    // var pattern = "[a-zA-Z0-9-_.]+[@]{1}[a-zA-Z]+[.]{1}[a-zA-Z]{2,4}$";
-    var pattern = "[a-z]+[a-zA-Z0-9._-]*@(gmail|yahoo|outlook|hotmail).com$";
+    var pattern = "[a-zA-Z0-9-_.]+@[a-zA-Z]+.[a-zA-Z]{2,4}$";
+    // var pattern = "[a-z]+[._-]*[a-z0-9]*@(gmail|yahoo|outlook|hotmail).com$";
     var input = document.getElementById("email").value;
     if (input.match(pattern) == null || input.match(pattern).index != 0) {
         console.log(input.match(pattern));
